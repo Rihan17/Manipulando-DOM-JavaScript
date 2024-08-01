@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+    <style>
+        form {
+            width: 20vw;
+        }
+        #alvo{
+            border: 1px solid navy;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background-color: red;
+            border-radius: 20px;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body id="pagina">
+<fieldset>
+    <legend><h1 id="titulo">Formulário</h1></legend>
+            <form>
+
+                <!--Nome-->
+                <label id="text" for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome">
+                <br>
+                <br>
+
+                <!--Data de Nascimento-->
+                <label id="text" for="dtn">Data de Nascimento: </label>
+                <input type="date" name="dtn" id="dtn">
+                <br>
+                <br>
+
+                <!--Email-->
+                <label id="text" for="email">Email: </label>
+                <input type="email" name="email" id="email">
+                <br>
+                <br>
+
+                <!--Cor-->
+                <label id="text" for="cor">Cor: </label>
+                <input type="color" name="cor" id="cor">
+                <br>
+                <br>
+
+                <!--Dependentes-->
+                <label id="text" for="dependentes">Dependentes: </label>
+                <input type="number" step="0.1" min="0" max="10" name="dependentes" id="dependentes">
+                    <br>
+                    <br>
+
+                    <!--Estado Civil-->
+                    <label id="text" for="estado">Estado Civil: </label>
+                    <select name="estado" id="estado">
+                        <option value="">Feliz</option>
+                        <option value="">Em rolo</option>
+                        <option value="">Triste</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <!--Endereço-->
+                    <label id="text" for="endereco">Endereço: </label>
+                    <textarea name="endereco" maxlength="150" id="endereco"></textarea>
+                    <br>
+                    <br>
+
+                    <!--Habilidades-->
+                    <p>Habilidades:</p>
+                    <label id="text" for="habilidades">HTML</label>
+                    <input type="radio" name="habilidades" id="html">
+                    <br>
+                    <label id="text" for="habilidades">CSS</label>
+                    <input type="radio" name="habilidades" id="css">
+                    <br>
+                    <label id="text" for="habilidades">JavaScript</label>
+                    <input type="radio" name="habilidades" id="js">
+                    <br>
+                    <label id="text" for="habilidades">Office</label>
+                    <input type="radio" name="habilidades" id="office">
+                    <br>
+                    <br>
+
+                    <!--Botão Cadastrar-->
+                    <button id="btn">Cadastrar</button>
+                            </form>
+
+                            <div id="alvo"></div>
+</fieldset>
+<script src="script.js"></script>
+</body>
+</html>
